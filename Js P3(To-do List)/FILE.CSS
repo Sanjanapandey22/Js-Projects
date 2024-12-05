@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.todo-app h2 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+     align-items: center;
+    justify-content: center;
+}
+
+.todo-app img {
+    width: 40px;
+    height: 38px;
+    object-fit: cover;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg, rgb(253, 222, 227), rgb(249, 167, 208), rgb(252, 81, 252) );
+    padding: 10px;
+}
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto;
+    padding: 40px; 
+    border-radius: 10px;
+    min-height: 50vh; 
+   position: relative; 
+    
+}
+.todo-app img{
+    width: 10vh;
+    height: 8vh;
+
+}
+.todo-app h2{
+    color: rgb(69, 13, 13);
+    display: flex;
+    alight-items: center;
+    margin-bottom: 20px;
+    justify-item: center;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(206, 205, 205);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom:25px;
+}
+button{
+    background-color: rgb(255, 165, 229);
+    color:rgb(69, 13, 13);
+   border: none;
+   outline: none;
+   padding: 16px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 35px;
+   
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 40px; 
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-family:sans-serif;
+    
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #ccc; 
+    top: 50%;
+    left: 10px;
+    
+    transform: translateY(-50%);
+}
+.done {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
+    background-image: url(https://www.flaticon.com/icon/1745173009003);
+    
+}
